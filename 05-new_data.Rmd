@@ -1,0 +1,72 @@
+# Data gathering strategy 
+
+
+## Concepts
+
+The data gathering process was divided into three sets of decision: where  (Location), when  (Frequency) and what to sample (Parameter). Additionally available resources ( budget, time, capacity, access) should be considered. In the example,  
+In the following paragraphs, an incremental approach is suggested with different approaches based on available data. 
+
+Another important 
+
+### Location 
+
+The choice of sampling location can be determined based on the available information. The incremental approach proposed develops on three levels (L1,L2,L3)
+
+
+**L1 topological approach** – The choice of sampling location is one of the first decision to be taken. In case of no prior information the topological approach developed by Sharp (1971) may be a valuable starting point since the only required input is the topology of the river. Dividing the river into 8 parts could provide a good balance between sampling size and detail. It is recommended to sample after full water mixture, a distance from tributaries connection of L=25 x width can be taken as general reference (Alilou et al., 2019).
+
+\
+
+**L2 weighted topological approach based on land cover** – After the first draft of ideal location points, new knowledge can be incorporated in form of expert opinion, published literature, national data. Basic land cover classification (urban, peri-urban and farms, Figure 8.2) provided a more detailed map (Figure 8.3). The topological approach was improved by associating weight to each river segment (Sanders et al., 1983). Note that this weighted approach could also be used for sampling cost optimization (Rajagopal, 1984).
+
+\
+
+**L3 incorporating published literature** – Data from published studies (Akalu, S., Mengistou, S., and Leta, 2011; Kassegne et al., 2018a; Melaku et al., 2007; Weldegebriel et al., 2012) (Figure 8.4)  was used to update the map (Figure 8.5) by ranking the river segments based on risk likelihood. Likelihood was calculated as assumed water quality x presence of farming activities. Note that farming was only assessed as presence/absence and size of farmed land was not considered.
+
+\
+
+**L4 using geo-statistical tools** – Moving towards more sophisticated methods, kriging, genetic algorithm, conditional entropy could be included (Jiang et al., 2020; Karamouz et al., 2009) as well as Bayesian approaches (Scientific Advisory Board-Ecological Processes Standing Committee (EPSC), 2014). This would require initial data from existing stations and a higher capacity for calculations.
+
+
+
+
+### Frequency
+
+Frequency of sampling is likely to be determined by project timeline and budget. Despite this limitation, some considerations can be made. 
+
+**F1 minimum requirement** – A bare minimum could be considered as one sample per location per season (dry and wet). 
+
+**F2 minimum international standard** – The program GEMS/WATER recommends for streams an optimal of 24 samples per year (with a minimum of 4) and a minimum of 12 and maximum of 24 for large drainage areas of rivers (100,000 km2). 
+
+**F3 frequency for hypothesis testing** – Once previously published data is incorporated, sampling number and frequency can be adjusted to detect a specific margin or trend. For a given confidence (Zα/2), previously calculate mean (µ) and variance (σ) and confidence interval width (µ-x) Sanders (1983 eq. 5.7; Sanders and Adrian, 1978) proposes the following:
+
+$$n≥\left(\frac{Z_{α/2}\times σ}{μ-x}\right)^2$$
+
+For time series a quantification of samples that assumes concentrations to be random, independent and identically distributed would be calculated as (Strobl and Robillard, 2008): 
+
+$$N=[(t_{α/2} S / R)]\times2$$ 
+
+Where N is the number of equally (temporally) spaced samples collected per year; tα/2 is a constant which is a function of the level of significance, and the number of samples; S is the standard deviation of the water quality concentrations; and R is the specified half-width of the confidence interval of the annual mean. 
+More sophisticated statistical tools can be used including harmonic, Bayesian analysis, entropy, semivariogram (Khalil and Ouarda, 2009).
+
+### Parameters
+
+## Tools
+
+
+## An example
+
+### Location
+
+
+### Frequency
+
+
+### Parameters
+
+```{r fig-margin, fig.margin = TRUE, fig.cap = "MPG vs horsepower, colored by transmission.", fig.width=3.5, fig.height=3.5, cache=TRUE, message=FALSE}
+
+
+akaki_WQ <- read.csv("./data/Akaki_WQ.csv")
+  
+```

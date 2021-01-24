@@ -1,0 +1,64 @@
+--- 
+title: "Data gathering for Water Security: a contextualised approach"
+author: "Giacomo Butte"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: bttgcm.github.io/ws_coat
+description: "A tool to plan data gathering campaign to assess Water Security"
+---
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+```{r eval=FALSE, echo=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+
+
+# Introduction
+
+
+This is a guidance document for a Water Security Contextualized Assessment Tool developed within the [Water Security Hub](https://www.watersecurityhub.org) at Newcastle University. Each chapter explains one of the steps included in the process. The first section of each chapter gives the a brief theoretical background, the second one recommends some existing tools and suggest new ones, while the third section exemplifies the process using a case study.
+
+
+
+The approach is divided into four steps:
+
+- **Definition of study site** 
+
+- **Boundaries definition for Water Security** 
+From existing WS indexes, compile a context appropriate short-list of indicators to assess different dimensions of WS.
+Threshold values are usually attached to each indicator but could be revised to suit local condition \@ref(boundaries). 
+
+- **Rapid Water in-Security assessment** using available data from global datasets, published literature, local knowledge and national data. The research aims at finding evidence for likelihood of Water in-Security for a given dimension, identifying a possible hazard and possible impact. The gathered secondary data is used for a quick assessment of the different dimensions of WS.  Dimensions / sub-dimension likely of being in a water insecurity (hazard id) states are identified for additional primary data gathering.
+
+- **System mapping.**The previously identified WS dimension in a possible state of Water inSecurity are analysed as systems. Determining causes and impacts of water insecurity are identified. Comparison with available data allows for the identification of knowledge gaps and possible leverage points to move the WS dimension into a state of water security.
+
+- **Data gathering for research for impact**. The previous analysis allows to identify research areas that could lead to larger impact in the improvement of water security. This could involve better spatio-temporal characterization, risk assessment, forecasting, identification of mitigation practices. Particularly attention should be given to the communication of findings to relevant stakeholders 
+
+
+## Do we need another assessment tool?
+
+
+A large-scale survey of water practitioners in Canada (Norman et al., 2011) brought to attention different short- comings: little agreement on WS definition, monitoring and assessment is practiced but only a limited amount of available indicators are used, 38% of the participants chose not to use available tools due to difficulties and fragmentation (too specific to a region or a timeframe), lack of centralized data and consistency, governance is often underemphasized in achieving WS (and not in- cluded in assessment tools), the importance of non-state stakeholder in the governance of water systems. These findings align with the barriers to WS identified by the Water Security and Sustainability Hub (Water Hub): in- sufficient data, unfit service delivery models, fragmented governance; unsuitable solutions to localised problems and limited community involvement.
+
+**The cost of data**  -  Another aspect not so much explored is the cost of planning and collecting data. The cost of producing monitoring data the SDG in the 77 IDA coun- tries was estimated at 1 billion US$ per year (Espey et al., 2015). Hydrological monitoring costs estimates reached 32 million per year. Data ownership, management and access add additional layer of complexity to the issue (Hering, 2017; Zogheib et al., 2018). Aside from collec- tion, storage and management is an issue of growing con- cern. SDG 6 indicators have different custodian agencies (UN Water, 2016) and different data management systems exists such as JMP (washdata.org), GEMI (gemi.org),UN-Water Global Analysis and Assessment of Sanitation and Drinking-Water (GLAAS). This indicates that plan- ning-collecting-storing-sharing data must be seen as a single process with strong integration between the differ- ent stages but also with the broader community/society.
+
+
+Write here brief summary about the reasons for such a tool

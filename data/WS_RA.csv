@@ -1,0 +1,20 @@
+﻿Empty,Dimension,Sub-dimension,Status
+,Climate,Variability,1
+,Climate,Drought,3
+,Water Quality,Wastewater treatment,4
+,Water Quality,River water health,4
+,Water Quality,Groundwater quality,2
+,Efficiency / Economic Value,Agriculture,3
+,Efficiency / Economic Value,Industry,3
+,Sanitation,health,3
+,Sanitation,services,4
+,Socio-economic,growth,3
+,Socio-economic,vulnerability,4
+,Governance,Legislation,2
+,Governance,Implementation,4
+,Damages,Economic loss,2
+,Damages,Casualties,2
+,Finance,Available budget,3
+,Supply-demand,withdrawal,3
+,Supply-demand,mitigation capacity,2
+,Supply-demand,supply infrastructure,2

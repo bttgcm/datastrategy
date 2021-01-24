@@ -1,0 +1,98 @@
+# WS boundaries
+
+## Concepts
+
+The first  step is to define the boundaries of Water Security (WS) in the studied area. To do so the approach proposed is to compare existing WS indexes.
+
+
+
+
+## Tools
+
+
+## An example: WQ for Akaki river
+
+
+
+
+Add graph water quality
+
+
+### Identifying sub-dimension for Water Quality
+
+Water quality was taken as an example on how to determine indicators for a given dimension. Five different indexes were compared (ADB, 2013; Babel and Shinde, 2013; Carden and Armitage, 2013; Hofste et al., 2019; Mason and Calow, 2012; UN-EP-DHI and UNEP, 2016) within the water quality dimension (Table 2). It can be observed how the used indicators converge to three distinct areas: assessment of river water quality (WQ01), groundwater quality (WQ02) and amount of treated discharge to the environment (WQ03). At a more detailed level, the indexes often use different parameters or methods. 
+
+
+
+```{r nice-tab, tidy=FALSE, echo=FALSE}
+library(magrittr)
+library(kableExtra)
+data <- read.csv("./data/WQ_indicators.csv")
+knitr::kable(
+  head(data,13), 
+  caption = 'comparison of indicators used in different WS indexes to assess water quality. ',
+  booktabs = TRUE) %>% 
+  kable_styling(font_size = 8)
+```
+
+
+We have identified WQ sub-dimension as:
+
+
+
+### Identifying indicators for each sub-dimension
+
+For each identified subdimension, a similar approach as previously adopted was carried. **WQ01: parameters used for river water health assessment.** To better understand the range of possible parameters, a comparison was carried across previously published studies (Banda and Kumarasamy, 2020; Keraga et al., 2017; Melaku et al., 2007; Troyer et al., 2016; Worako, 2015; Yilma et al., 2018; Zotou et al., 2018). Additionally, five studies were found to use macroinvertebrate indexes to assess water quality (Akalu, S., Mengistou, S., and Leta, 2011; Aschalew and Moog, 2015; Beyene et al., 2009; Desalegne, 2018; Kebede et al., 2020). Table 3 shows the result of the analysis. The number of parameters used ranged from a minimum of 7 to maximum of 36. Overall the considered studies used a total of 59 parameters and 3 macroinvertebrates indexes. A set of parameters has been used in at least half of the considered studies (frequency >7): pH,DO,EC,Temp,NO3, BOD5, NH3, PO4.
+
+```{r , tidy=FALSE, echo=FALSE}
+library(magrittr)
+library(kableExtra)
+WQ01 <- read.csv("./data/WQ01_indicators.csv")
+WQ01[is.na(WQ01)] <- ""
+
+knitr::kable(
+  head(WQ01,60), 
+  caption = 'comparison of indicators used in different WS indexes to assess water quality. ',
+  booktabs = TRUE) %>% 
+  kable_styling(font_size = 8) %>%
+  column_spec(2, color = "white",
+              background = spec_color(WQ01[,2], end = 0.7))
+```
+
+\
+
+
+**WQ02: parameters used for groundwater assessment** – The same process was followed for groundwater. Parameters used in five published studies in Ethiopia were compared (Table 4). Much more agreement between studies was found in the choice of parameters. The number of parameters used in each study varied from 13 to 16. A core dataset of twelve parameters was identified since it was used over 80% of the times.
+
+```{r , tidy=FALSE, echo=FALSE}
+library(magrittr)
+library(kableExtra)
+WQ02 <- read.csv("./data/WQ02_indicators.csv")
+WQ02[is.na(WQ02)] <- ""
+
+knitr::kable(
+  head(WQ02,16), 
+  caption = 'comparison of indicators used in different WS indexes to assess water quality. ',
+  booktabs = TRUE) %>% 
+  kable_styling(font_size = 8) %>%
+  column_spec(2, color = "white",
+              background = spec_color(WQ01[,2], end = 0.7))
+```
+
+
+\
+
+**WQ03 Treated wastewater** – The last indicator is usually estimated using national or municipality level available data. In some cases, a Shit Flow Analysis (sfd.susana.org) may exist. At national level, FAO estimated 0.3% of treated municipal wastewater (FAO, 2016). It the case of Addis Ababa, an estimate of 7% wastewater treatment was published by the Ministry of Water and Electricity (MoWIE, 2017).
+
+```{r Water Security, echo=FALSE, message=FALSE, warning=FALSE}
+
+dir <- getwd()
+setwd(dir)
+WQ.par <- read.csv("./data/WQ_parameters.csv")
+
+
+library("collapsibleTree") 
+p <- collapsibleTree( WQ.par, c("Dimension", "Subdimension", "Indicator", "Parameter"))
+p
+
+```

@@ -1,0 +1,38 @@
+# Water Security rapid assessment 
+
+## Concepts
+
+Using available data
+
+
+
+## Tools
+
+## An example
+
+The rapid assessment on available data gave this result:
+
+
+
+```{r , tidy=FALSE, echo=FALSE}
+library(magrittr)
+library(kableExtra)
+WS_RA <- read.csv("./data/WS_RA.csv")
+WS_RA2 <- subset(WS_RA, WS_RA$Dimension == "Water Quality")
+#WQ02[is.na(WQ02)] <- ""
+
+knitr::kable(
+  WS_RA, 
+  caption = 'comparison of indicators used in different WS indexes to assess water quality. ',
+  booktabs = TRUE) %>% 
+  kable_styling(font_size = 8) %>%
+  row_spec(which(WS_RA$Status == 3), bold = T, color = "black", background = "gold")%>%
+  row_spec(which(WS_RA$Status == 4), bold = T, color = "black", background = "red")%>%
+  row_spec(which(WS_RA$Status == 2), bold = T, color = "black", background = "green")
+
+
+  #column_spec(2, color = "white",
+              #background = spec_color(WS_RA[,3], end = 0.7))
+```
+
+

@@ -1,0 +1,13 @@
+Sub-dimension,Indicator,B2013,M2012,A3,TWAP,C2013
+Discharges,Treated wastewater,,1,1,1,
+Discharges,Wastewater management (RPMS – KPI 6 / Green Drop),,,,,1
+Groundwater,Concentration of site-specific pollutants /Permissible limits of these pollutants,1,,,,
+Groundwater,Groundwater quality (State report),,,,,1
+Surface water,Dissolved oxygen concentration/Permissible limit concentration,1,,,,
+Surface water,"Country-specific conditions (ADB, 2013)",1,,,,
+Surface water,"BOD 5-day values of river water samples. (Mehr, 2011)",1,,,,
+Surface water,Change in percentage freshwater of samples meeting quality standards (from GEMS),,1,,,
+Surface water,Change in chlorophyll/ turbidity/ suspended solids; from MODIS satellite UN-Water EG-IMD (2009),,1,,,
+Surface water,Coastal eutrophication potential (CEP) s based on Billen and Garnier’s (2007),,,1,,
+Surface water,"Dissolved inorganic nitrogen (DIN) (sub-indicator 4a) b) , Dissolved inorganic phosphorous (DIP) (sub-indicator 4b)",,,,1,
+Surface water,"Water resource quality (River health, State report)",,,,,1
