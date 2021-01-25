@@ -5,6 +5,11 @@
 
 ## Tools
 
+**River basin maps**
+[Hydrosheds](https://hydrosheds.org)
+
+
+
 
 ## An example
 The study was conducted on the Akaki River basin (Awash Wenz 2 in Hydrosheds REF). The catchment is located in central Ethiopia along the western mar- gin of the Main Ethiopian Rift and geographically located between 8°46´–9°14´N and 38°34´–39°04´E, covering an area of about 1500 km2. It experiences a temperate Afro-Alpine climate with daily average temperatures from 9.9 to 24.6 °C and annual mean rainfall is 1254 mm, as measured at Addis Ababa Observatory .Three main seasons can be observed: the major rainy one, locally known as Kiremt from June to September, contributing about 70% of the total annual rainfall. A minor rainy season, locally known as Belg, from mid-February to mid-April. The remaining five months are dry season (Ethiopian Public health Institute, 2017).

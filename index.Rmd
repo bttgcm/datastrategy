@@ -4,14 +4,20 @@ author: "Giacomo Butte"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
+highlight: monochrome
+theme: united
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [datagathering.bib, packages.bib, introduction.bib]
 biblio-style: apalike
+biblatexoptions: [refsegment=chapter]
 link-citations: yes
-github-repo: bttgcm.github.io/ws_coat
+github-repo: bttgcm.github.io/datastrategy
 description: "A tool to plan data gathering campaign to assess Water Security"
+always_allow_html: true
 ---
-```{r, setup, include=FALSE}
+
+
+```{r,  include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 ```
 
@@ -34,31 +40,49 @@ knitr::write_bib(c(
 # Introduction
 
 
-This is a guidance document for a Water Security Contextualized Assessment Tool developed within the [Water Security Hub](https://www.watersecurityhub.org) at Newcastle University. Each chapter explains one of the steps included in the process. The first section of each chapter gives the a brief theoretical background, the second one recommends some existing tools and suggest new ones, while the third section exemplifies the process using a case study.
+This is a guidance document for the Water Security Contextualized Assessment Tool developed within the [Water Security Hub](https://www.watersecurityhub.org) at Newcastle University. The project aim is to support decision making on data gathering by addressing the (apparently simple) question: **"What data do we need to assess Water Security?"**
+
+The proposed process consist of several steps and each of them has a dedicated chapter.The first section of each chapter (_Concepts_) gives the a brief theoretical background, and provides reference to key ideas. The second one (_Tools_) recommends some existing tools and suggest new ones, that could support the task described inthe chapter.The third section (_An example_) shows an application of the method. 
+
+In the case study, for simplification, a single dimension of Water Security (WS) was taken into analysis: water quality. The study site is the Akaki river basin located in Ethiopia.
+
+
+## Do we need another assessment tool?
+
+
+WS has emerged as a predominant framework in the assessment and understanding of the relationship between the environment and society. Past research has produced a variety of definitions, indexes,
+Data and information are the foundations of any assessment of WS. 
+
+**Place-based application** – Once operationalized, WS definitions and framing adapt to specific contexts [@Gerlak2018]. It is therefore essential to incorporate community context. Therefore, rather than a rigid set of standards and rules a method to build a data gathering strategy is suggested. The user will need to understand what boundaries, threshold, methods, risks are more relevant to the study site.
+
+
+**The need for data** - Deputy Secretary-General Eliasson referred to data as the “lifeblood of decision-making and the raw material for accountability” [@UNWater2016]. Several barriers exist before reaching well-integrated, accessible and global data. Collecting data requires resources year [@Espey2015]. Data ownership, management and access add additional layer of complexity to the issue [@Hering2017]. As a consequence, data gaps still exist [@Schmidt-Traub2017b; @UNwater2019] and will affect decision-making [@York2020Measuring]. 
+
+
+**The need for data gathering strategies** - When data exist, it may not necessarily translate into information. In several cases “data seems to be collected without a clear statement to be evaluated” [@Rose1992]. To reduce this possibility, it is essential to elaborate an efficient and robust data gathering strategy through careful experimental design. This aspect is not always given the right amount of attention and sampling errors “are  believed to dominate the errors of analytical measurement during the entire environmental data acquisition process” [@Zhang2012] and will produce different results [@Abbatangelo2019; @Wang2015a]. A data gathering strategy (DGS) becomes an essential activity to optimize resources, address leverage points, transform research into impact and reduce uncertainties.
 
 
 
-The approach is divided into four steps:
+## Process steps
 
-- **Definition of study site** 
 
-- **Boundaries definition for Water Security** 
+The approach is divided into five steps:
+
+- **Definition of study site and assessment of available resources** 
+
+- **Boundaries definition for Water Security**
 From existing WS indexes, compile a context appropriate short-list of indicators to assess different dimensions of WS.
-Threshold values are usually attached to each indicator but could be revised to suit local condition \@ref(boundaries). 
+Threshold values are usually attached to each indicator but could be revised to suit local condition. Section: [WS boundaries]. 
 
-- **Rapid Water in-Security assessment** using available data from global datasets, published literature, local knowledge and national data. The research aims at finding evidence for likelihood of Water in-Security for a given dimension, identifying a possible hazard and possible impact. The gathered secondary data is used for a quick assessment of the different dimensions of WS.  Dimensions / sub-dimension likely of being in a water insecurity (hazard id) states are identified for additional primary data gathering.
+- **Rapid Water in-Security assessment** using available data from global datasets, published literature, local knowledge and national data. The research aims at finding evidence for likelihood of Water in-Security for a given dimension, identifying a possible hazard and possible impact. The gathered secondary data is used for a quick assessment of the different dimensions of WS.  Dimensions / sub-dimension likely of being in a water insecurity (hazard id) states are identified for additional primary data gathering. Section: [Water Security rapid assessment]
 
 - **System mapping.**The previously identified WS dimension in a possible state of Water inSecurity are analysed as systems. Determining causes and impacts of water insecurity are identified. Comparison with available data allows for the identification of knowledge gaps and possible leverage points to move the WS dimension into a state of water security.
 
 - **Data gathering for research for impact**. The previous analysis allows to identify research areas that could lead to larger impact in the improvement of water security. This could involve better spatio-temporal characterization, risk assessment, forecasting, identification of mitigation practices. Particularly attention should be given to the communication of findings to relevant stakeholders 
 
 
-## Do we need another assessment tool?
+```{r process diagram, fig.cap = "_Proposed process to create a data gathering strategy_ ", fig.align='center', out.width='40%', echo = FALSE }
+knitr::include_graphics("images/WSCOAT_process.jpg")
 
+```
 
-A large-scale survey of water practitioners in Canada (Norman et al., 2011) brought to attention different short- comings: little agreement on WS definition, monitoring and assessment is practiced but only a limited amount of available indicators are used, 38% of the participants chose not to use available tools due to difficulties and fragmentation (too specific to a region or a timeframe), lack of centralized data and consistency, governance is often underemphasized in achieving WS (and not in- cluded in assessment tools), the importance of non-state stakeholder in the governance of water systems. These findings align with the barriers to WS identified by the Water Security and Sustainability Hub (Water Hub): in- sufficient data, unfit service delivery models, fragmented governance; unsuitable solutions to localised problems and limited community involvement.
-
-**The cost of data**  -  Another aspect not so much explored is the cost of planning and collecting data. The cost of producing monitoring data the SDG in the 77 IDA coun- tries was estimated at 1 billion US$ per year (Espey et al., 2015). Hydrological monitoring costs estimates reached 32 million per year. Data ownership, management and access add additional layer of complexity to the issue (Hering, 2017; Zogheib et al., 2018). Aside from collec- tion, storage and management is an issue of growing con- cern. SDG 6 indicators have different custodian agencies (UN Water, 2016) and different data management systems exists such as JMP (washdata.org), GEMI (gemi.org),UN-Water Global Analysis and Assessment of Sanitation and Drinking-Water (GLAAS). This indicates that plan- ning-collecting-storing-sharing data must be seen as a single process with strong integration between the differ- ent stages but also with the broader community/society.
-
-
-Write here brief summary about the reasons for such a tool

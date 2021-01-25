@@ -1,0 +1,248 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Data gathering for Water Security: a contextualised approach},
+  pdfauthor={Giacomo Butte},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Data gathering for Water Security: a contextualised approach}
+\author{Giacomo Butte}
+\date{2021-01-25}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+This is a guidance document for the Water Security Contextualized Assessment Tool developed within the \href{https://www.watersecurityhub.org}{Water Security Hub} at Newcastle University. The project aim is to support decision making on data gathering by addressing the (apparently simple) question: \textbf{``What data do we need to assess Water Security?''}
+
+The proposed process consist of several steps and each of them has a dedicated chapter.The first section of each chapter (\emph{Concepts}) gives the a brief theoretical background, and provides reference to key ideas. The second one (\emph{Tools}) recommends some existing tools and suggest new ones, that could support the task described inthe chapter.The third section (\emph{An example}) shows an application of the method.
+
+In the case study, for simplification, a single dimension of Water Security (WS) was taken into analysis: water quality. The study site is the Akaki river basin located in Ethiopia.
+
+\hypertarget{do-we-need-another-assessment-tool}{%
+\section{Do we need another assessment tool?}\label{do-we-need-another-assessment-tool}}
+
+WS has emerged as a predominant framework in the assessment and understanding of the relationship between the environment and society. Past research has produced a variety of definitions, indexes,
+Data and information are the foundations of any assessment of WS.
+
+\textbf{Place-based application} -- Once operationalized, WS definitions and framing adapt to specific contexts \citep{Gerlak2018}. It is therefore essential to incorporate community context. Therefore, rather than a rigid set of standards and rules a method to build a data gathering strategy is suggested. The user will need to understand what boundaries, threshold, methods, risks are more relevant to the study site.
+
+\textbf{The need for data} - Deputy Secretary-General Eliasson referred to data as the ``lifeblood of decision-making and the raw material for accountability'' \citep{UNWater2016}. Several barriers exist before reaching well-integrated, accessible and global data. Collecting data requires resources year \citep{Espey2015}. Data ownership, management and access add additional layer of complexity to the issue \citep{Hering2017}. As a consequence, data gaps still exist \citep{Schmidt-Traub2017b, UNwater2019} and will affect decision-making \citep{York2020Measuring}.
+
+\textbf{The need for data gathering strategies} - When data exist, it may not necessarily translate into information. In several cases ``data seems to be collected without a clear statement to be evaluated'' \citep{Rose1992}. To reduce this possibility, it is essential to elaborate an efficient and robust data gathering strategy through careful experimental design. This aspect is not always given the right amount of attention and sampling errors ``are believed to dominate the errors of analytical measurement during the entire environmental data acquisition process'' \citep{Zhang2012} and will produce different results \citep{Abbatangelo2019, Wang2015a}. A data gathering strategy (DGS) becomes an essential activity to optimize resources, address leverage points, transform research into impact and reduce uncertainties.
+
+\hypertarget{process-steps}{%
+\section{Process steps}\label{process-steps}}
+
+\textbackslash begin\{figure\}
+
+\{\centering \includegraphics[width=0.6\linewidth]{images/WSCOAT_process}
+
+\}
+
+\textbackslash caption\{\emph{Figure 1: assigning a magnitude value for each segment based on its tributaries. The centroid is located (left image)at the nearest segment of \(M_o/2\). In this case segment with magnitude 7, since 16/2=8. The network would be divided into two segments of magnitude 7 and 9 (given by 16-7). With the same procedure the following sampling points would be determined near the half magnitude of each segment (on the right)} . Source: \citet{Sharp1971}\}\label{fig:sharp01}
+\textbackslash end\{figure\}
+
+The approach is divided into five steps:
+
+\begin{itemize}
+\item
+  \textbf{Definition of study site}
+\item
+  \textbf{Boundaries definition for Water Security}
+  From existing WS indexes, compile a context appropriate short-list of indicators to assess different dimensions of WS.
+  Threshold values are usually attached to each indicator but could be revised to suit local condition. Section: \protect\hyperlink{boundaries}{WS boundaries}.
+\item
+  \textbf{Rapid Water in-Security assessment} using available data from global datasets, published literature, local knowledge and national data. The research aims at finding evidence for likelihood of Water in-Security for a given dimension, identifying a possible hazard and possible impact. The gathered secondary data is used for a quick assessment of the different dimensions of WS. Dimensions / sub-dimension likely of being in a water insecurity (hazard id) states are identified for additional primary data gathering. Section: \protect\hyperlink{water-security-rapid-assessment}{Water Security rapid assessment}
+\item
+  \textbf{System mapping.}The previously identified WS dimension in a possible state of Water inSecurity are analysed as systems. Determining causes and impacts of water insecurity are identified. Comparison with available data allows for the identification of knowledge gaps and possible leverage points to move the WS dimension into a state of water security.
+\item
+  \textbf{Data gathering for research for impact}. The previous analysis allows to identify research areas that could lead to larger impact in the improvement of water security. This could involve better spatio-temporal characterization, risk assessment, forecasting, identification of mitigation practices. Particularly attention should be given to the communication of findings to relevant stakeholders
+\end{itemize}
+
+\hypertarget{intro}{%
+\chapter{Identifying study site}\label{intro}}
+
+\hypertarget{concepts}{%
+\section{Concepts}\label{concepts}}
+
+\hypertarget{tools}{%
+\section{Tools}\label{tools}}
+
+\hypertarget{an-example}{%
+\section{An example}\label{an-example}}
+
+The study was conducted on the Akaki River basin (Awash Wenz 2 in Hydrosheds REF). The catchment is located in central Ethiopia along the western mar- gin of the Main Ethiopian Rift and geographically located between 8°46´--9°14´N and 38°34´--39°04´E, covering an area of about 1500 km2. It experiences a temperate Afro-Alpine climate with daily average temperatures from 9.9 to 24.6 °C and annual mean rainfall is 1254 mm, as measured at Addis Ababa Observatory .Three main seasons can be observed: the major rainy one, locally known as Kiremt from June to September, contributing about 70\% of the total annual rainfall. A minor rainy season, locally known as Belg, from mid-February to mid-April. The remaining five months are dry season (Ethiopian Public health Institute, 2017).
+
+\hypertarget{boundaries}{%
+\chapter{WS boundaries}\label{boundaries}}
+
+Placeholder
+
+\hypertarget{concepts-1}{%
+\section{Concepts}\label{concepts-1}}
+
+\hypertarget{tools-1}{%
+\section{Tools}\label{tools-1}}
+
+\hypertarget{an-example-wq-for-akaki-river}{%
+\section{An example: WQ for Akaki river}\label{an-example-wq-for-akaki-river}}
+
+\hypertarget{identifying-sub-dimension-for-water-quality}{%
+\subsection{Identifying sub-dimension for Water Quality}\label{identifying-sub-dimension-for-water-quality}}
+
+\hypertarget{identifying-indicators-for-each-sub-dimension}{%
+\subsection{Identifying indicators for each sub-dimension}\label{identifying-indicators-for-each-sub-dimension}}
+
+\hypertarget{water-security-rapid-assessment}{%
+\chapter{Water Security rapid assessment}\label{water-security-rapid-assessment}}
+
+Placeholder
+
+\hypertarget{concepts-2}{%
+\section{Concepts}\label{concepts-2}}
+
+\hypertarget{tools-2}{%
+\section{Tools}\label{tools-2}}
+
+\hypertarget{an-example-1}{%
+\section{An example}\label{an-example-1}}
+
+\hypertarget{water-security-system-map}{%
+\chapter{Water Security system map}\label{water-security-system-map}}
+
+Some \emph{significant} applications are demonstrated in this chapter.
+
+\hypertarget{concepts-3}{%
+\section{Concepts}\label{concepts-3}}
+
+\hypertarget{tools-3}{%
+\section{Tools}\label{tools-3}}
+
+\hypertarget{an-example-2}{%
+\section{An example}\label{an-example-2}}
+
+The findings of the rapid assessment on water quality were visualized using the diagram developed during the Hub assembly in Ethiopia (Figure 4). The natural environment (N) is under stress due to discharges from anthropogenic activities and growing urbanization (axis GU-P-I-N). Low environmental awareness (AW) and a weak governance in implementing existing regulation (G) does not create a sufficient barrier to reduce pressure on the environment. This condition has implie The poor quality or river water and ecosystem has negative impact on population health(N-P) and economic resources (N-R).Low environmental awareness (AW) and a loose implementation of existing regulation does not reduce
+
+\hypertarget{data-gathering-strategy}{%
+\chapter{Data gathering strategy}\label{data-gathering-strategy}}
+
+Placeholder
+
+\hypertarget{concepts-4}{%
+\section{Concepts}\label{concepts-4}}
+
+\hypertarget{location}{%
+\subsection{Location}\label{location}}
+
+\hypertarget{frequency}{%
+\subsection{Frequency}\label{frequency}}
+
+\hypertarget{parameters}{%
+\subsection{Parameters}\label{parameters}}
+
+\hypertarget{tools-4}{%
+\section{Tools}\label{tools-4}}
+
+\hypertarget{an-example-3}{%
+\section{An example}\label{an-example-3}}
+
+\hypertarget{location-1}{%
+\subsection{Location}\label{location-1}}
+
+\hypertarget{frequency-1}{%
+\subsection{Frequency}\label{frequency-1}}
+
+\hypertarget{parameters-1}{%
+\subsection{Parameters}\label{parameters-1}}
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+  \bibliography{datagathering.bib,packages.bib,introduction.bib}
+
+\end{document}

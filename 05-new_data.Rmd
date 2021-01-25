@@ -1,3 +1,7 @@
+---
+bibliography: datagathering.bib
+---
+
 # Data gathering strategy 
 
 
@@ -13,15 +17,23 @@ Another important
 The choice of sampling location can be determined based on the available information. The incremental approach proposed develops on three levels (L1,L2,L3)
 
 
-**L1 topological approach** – The choice of sampling location is one of the first decision to be taken. In case of no prior information the topological approach developed by Sharp (1971) may be a valuable starting point since the only required input is the topology of the river. Dividing the river into 8 parts could provide a good balance between sampling size and detail. It is recommended to sample after full water mixture, a distance from tributaries connection of L=25 x width can be taken as general reference (Alilou et al., 2019).
+**L1: Topological approach** – The choice of sampling location is one of the first decision to be taken. In case of no prior information the topological approach developed by @Sharp1971. This method allows to optimize network coverage and sampling points with only the network topology.  Each section of the river is numbered based on the number of tributaries (or sources) that is receiving. Applying this procedure to a network creates a magnitude value for each segment. Centroid position can defined as the segment nearest to $M_o/2$, where $M_o$ is the magnitude at the outlet. This step can be repeated several to meet a desired number of sampling locations (figure \@ref(fig:sharp01)). 
+
+It is recommended to sample after full water mixture, a distance from tributaries connection of L=25 x width can be taken as general reference [@Alilou2019]. 
+
+
+
+```{r sharp01, fig.cap = "_Figure 1: assigning a magnitude value for each segment based on its tributaries. The centroid is located (left image)at the nearest segment of $M_o/2$. In this case segment with magnitude 7, since 16/2=8. The network would be divided into two segments of magnitude 7 and 9 (given by 16-7). With the same procedure the following sampling points would be determined near the half magnitude of each segment (on the right)_ . Source: @Sharp1971", fig.align='center', out.width='60%', echo = FALSE }
+knitr::include_graphics("images/sharp01.jpg")
+
+```
+\
+
+**L2: Weighted topological approach based on land cover** – After the first draft of ideal location points, new knowledge can be incorporated in form of expert opinion, published literature, national data. The topological approach was improved by associating weight to each river segment [@Sanders1983; @Rajagopal1983 ].
 
 \
 
-**L2 weighted topological approach based on land cover** – After the first draft of ideal location points, new knowledge can be incorporated in form of expert opinion, published literature, national data. Basic land cover classification (urban, peri-urban and farms, Figure 8.2) provided a more detailed map (Figure 8.3). The topological approach was improved by associating weight to each river segment (Sanders et al., 1983). Note that this weighted approach could also be used for sampling cost optimization (Rajagopal, 1984).
-
-\
-
-**L3 incorporating published literature** – Data from published studies (Akalu, S., Mengistou, S., and Leta, 2011; Kassegne et al., 2018a; Melaku et al., 2007; Weldegebriel et al., 2012) (Figure 8.4)  was used to update the map (Figure 8.5) by ranking the river segments based on risk likelihood. Likelihood was calculated as assumed water quality x presence of farming activities. Note that farming was only assessed as presence/absence and size of farmed land was not considered.
+**L3 incorporating published literature** – Data from published studies [@Akalu2011; @Melaku2007; @Kassegne2019;@Weldegebriel2012]. (Figure 8.4)  was used to update the map (Figure 8.5) by ranking the river segments based on risk likelihood. Likelihood was calculated as assumed water quality x presence of farming activities. Note that farming was only assessed as presence/absence and size of farmed land was not considered.
 
 \
 
@@ -34,11 +46,11 @@ The choice of sampling location can be determined based on the available informa
 
 Frequency of sampling is likely to be determined by project timeline and budget. Despite this limitation, some considerations can be made. 
 
-**F1 minimum requirement** – A bare minimum could be considered as one sample per location per season (dry and wet). 
+**F1 minimum requirement** – A bare minimum could consist in one sample per location per climatic season. 
 
 **F2 minimum international standard** – The program GEMS/WATER recommends for streams an optimal of 24 samples per year (with a minimum of 4) and a minimum of 12 and maximum of 24 for large drainage areas of rivers (100,000 km2). 
 
-**F3 frequency for hypothesis testing** – Once previously published data is incorporated, sampling number and frequency can be adjusted to detect a specific margin or trend. For a given confidence (Zα/2), previously calculate mean (µ) and variance (σ) and confidence interval width (µ-x) Sanders (1983 eq. 5.7; Sanders and Adrian, 1978) proposes the following:
+**F3 frequency for hypothesis testing** – Once previously published data is incorporated, sampling number and frequency can be adjusted to detect a specific margin or trend. For a given confidence ($Z_α/2$), previously calculate mean (µ) and variance (σ) and confidence interval width ($µ-x$) [@Sanders1983][eq. 5.7] Sanders (1983 eq. 5.7; @Sanders1978 Sanders and Adrian, 1978) proposes the following:
 
 $$n≥\left(\frac{Z_{α/2}\times σ}{μ-x}\right)^2$$
 
@@ -70,3 +82,14 @@ More sophisticated statistical tools can be used including harmonic, Bayesian an
 akaki_WQ <- read.csv("./data/Akaki_WQ.csv")
   
 ```
+
+
+::: {.invisible style="display:none"}
+@Kassegne2019
+
+:::
+
+
+`r if (knitr:::is_html_output()) '
+## References {-}
+'`

@@ -1,4 +1,4 @@
-# WS boundaries
+# WS boundaries {#boundaries}
 
 ## Concepts
 
@@ -24,7 +24,7 @@ Water quality was taken as an example on how to determine indicators for a given
 
 
 
-```{r nice-tab, tidy=FALSE, echo=FALSE}
+```{r , tidy=FALSE, echo=FALSE}
 library(magrittr)
 library(kableExtra)
 data <- read.csv("./data/WQ_indicators.csv")
