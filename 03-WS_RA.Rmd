@@ -8,6 +8,8 @@ Using available data
 
 ## Tools
 
+http://geoid.colorado.edu/grace/dataportal.html
+
 ## An example
 
 The rapid assessment on available data gave this result:

@@ -1,27 +1,36 @@
-﻿empty,Dimension,Subdimension,Indicator,Parameter
-,Water Quality,Treated discharges,Fraction of treated discharges,volume wastewater
-,Water Quality,Treated discharges,Fraction of treated discharges,volume treated ww
-,Water Quality,Groundwater,GW quality,Ca
-,Water Quality,Groundwater,GW quality,Cl-
-,Water Quality,Groundwater,GW quality,EC
-,Water Quality,Groundwater,GW quality,F
-,Water Quality,Groundwater,GW quality,HCO3
-,Water Quality,Groundwater,GW quality,K
-,Water Quality,Groundwater,GW quality,Mg
-,Water Quality,Groundwater,GW quality,Na
-,Water Quality,Groundwater,GW quality,pH
-,Water Quality,Groundwater,GW quality,SO4
-,Water Quality,Groundwater,GW quality,NO3
-,Water Quality,Groundwater,GW quality,TDS
-,Water Quality,Surface water,River water quality,pH
-,Water Quality,Surface water,River water quality,DO
-,Water Quality,Surface water,River water quality,EC
-,Water Quality,Surface water,River water quality,Temp
-,Water Quality,Surface water,River water quality,NO3
-,Water Quality,Surface water,River water quality,BOD5
-,Water Quality,Surface water,River water quality,NH3
-,Water Quality,Surface water,River water quality,PO4
-,Water Quality,Surface water,River water quality,TSS
-,Water Quality,Surface water,River water quality,Cl-
-,Water Quality,Surface water,River water quality,TDS
-,Water Quality,Surface water,River water quality,Turb
+﻿Dimension,Subdimension,Indicator,Parameter
+Water Quality,Wastewater,% treated discharges,volume wastewater
+Water Quality,Wastewater,% treated discharges,volume treated ww
+Water Quality,Groundwater,GW quality,Ca
+Water Quality,Groundwater,GW quality,Cl-
+Water Quality,Groundwater,GW quality,EC
+Water Quality,Groundwater,GW quality,F
+Water Quality,Groundwater,GW quality,HCO3
+Water Quality,Groundwater,GW quality,K
+Water Quality,Groundwater,GW quality,Mg
+Water Quality,Groundwater,GW quality,Na
+Water Quality,Groundwater,GW quality,pH
+Water Quality,Groundwater,GW quality,SO4
+Water Quality,Groundwater,GW quality,NO3
+Water Quality,Groundwater,GW quality,TDS
+Water Quality,Surface water,River water quality,pH
+Water Quality,Surface water,River water quality,DO
+Water Quality,Surface water,River water quality,EC
+Water Quality,Surface water,River water quality,Temp
+Water Quality,Surface water,River water quality,NO3
+Water Quality,Surface water,River water quality,BOD5
+Water Quality,Surface water,River water quality,NH3
+Water Quality,Surface water,River water quality,PO4
+Water Quality,Surface water,River water quality,TSS
+Water Quality,Surface water,River water quality,Cl-
+Water Quality,Surface water,River water quality,TDS
+Water Quality,Surface water,River water quality,Turb
+Climate,,,
+Damages,,,
+Demand-supply,,,
+Ecosystems,,,
+Efficiency / Value,,,
+Finance,,,
+Management,,,
+Resilience,,,
+Socio-economic,,,

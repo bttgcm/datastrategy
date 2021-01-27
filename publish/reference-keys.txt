@@ -1,8 +1,3 @@
-tab:unnamed-chunk-4
-tab:unnamed-chunk-5
-tab:unnamed-chunk-6
-tab:unnamed-chunk-7
-fig:sharp01
 introduction
 do-we-need-another-assessment-tool
 process-steps
@@ -34,3 +29,15 @@ an-example-3
 location-1
 frequency-1
 parameters-1
+fig:unnamed-chunk-4
+feedback
+tab:unnamed-chunk-1
+tab:unnamed-chunk-2
+tab:unnamed-chunk-3
+fig:unnamed-chunk-1
+tab:unnamed-chunk-4
+fig:sharp01
+identifying-indicators-for-each-sub-dimension-1
+conclusion
+subdimension
+proposed-data-gathering-strategies
