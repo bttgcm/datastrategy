@@ -1,8 +1,9 @@
 # Water Security system map
 
-Some _significant_ applications are demonstrated in this chapter.
-
 ## Concepts
+
+Create map based on avaialbe information (literautre, local knowledge, gov....)
+Research gaps x research need = research impact
 
 ## Tools
 

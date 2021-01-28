@@ -41,3 +41,8 @@ identifying-indicators-for-each-sub-dimension-1
 conclusion
 subdimension
 proposed-data-gathering-strategies
+concepts-5
+tools-5
+an-example-4
+rationale
+a-pathway-for-data-gathering

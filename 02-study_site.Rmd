@@ -1,24 +1,42 @@
-# Initiation phase: site, capacity, resources {#intro}
+# Project initiation {#intro}
+
+```{r}
+```
+
+[ To do in this section: define a minimum package of resources to get basic data for a given basin]
 
 ## Concepts
+
+Add text about site choice, capacity and resource assessment.
+
+After sel-assessment, one of the following scenario should be identified as the most suitable to describe the project:
+
+**Scenario 01: low resources** – In this alternative, low financial resources are assumed. Methods are chosen based on cost. A medium to high level of capacity is assumed.
+
+**Scenario 02: low uncertainty** – This scenario aims at reducing the uncertainty of sampling and analysis. Nevertheless a trade-off with cost and resources needs to be found.
+
+**Scenario 03: Participation of local communities** Simpler methods involving citizen science and monitoring are used. More frequent, cheaper, less accurate monitoring and sampling are preferred.
 
 
 ## Tools
 
-<mark>Future tasks </mark> define a minimum package of resources to get basic data for a given basin
 
-**River basin information**
-[Hydrosheds](https://hydrosheds.org)
+**River basin information**\
+
+- [Hydrosheds](https://hydrosheds.org)
 
 
 **Capacity assessment**\
 
-1. [A Brief Review of 20 Tools to
+- [A Brief Review of 20 Tools to
 Assess Capacity](https://www.humanitarianlibrary.org/sites/default/files/2014/02/capacity_development_group_undp_2005_brief_review_20_tools_to_assess.pdf)
 
-2. [Integrated Water Resources Management, as measured by SDG indicator 6.5.1](http://iwrmdataportal.unepdhi.org)
+- [Integrated Water Resources Management, as measured by SDG indicator 6.5.1](http://iwrmdataportal.unepdhi.org)
 
 
+**Assessing availabe resources**\
+
+- Research on data costing could provide a tool to assess available budget
 
 
 ## An example
