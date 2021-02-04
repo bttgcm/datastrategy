@@ -1,0 +1,20 @@
+Dimension ,Sub-dimension,Is it possible to gather meaningful new primary data ?
+Water Quality ,Wastewater treatment,yes
+Water Quality ,River water health,yes
+Water Quality ,Groundwater quality,yes
+Efficiency / Economic Value,Agriculture,yes
+Efficiency / Economic Value,Industry,yes
+Sanitation ,health,yes
+Sanitation ,services,yes
+Socio-economic ,vulnerability,yes
+Governance ,Implementation,yes
+Finance ,Available budget,yes
+Supply-demand ,withdrawal/TARWR,yes
+Supply-demand ,mitigation capacity,yes
+Supply-demand ,infrastructure,yes
+Climate ,Variability,no. Timeseries of min. 30 years needed
+Climate ,Drought,no. Timeseries of min. 30 years needed
+Damages ,Economic loss,"no, unless disaster happening during project"
+Damages ,Casualties,"no, unless disaster happening during project"
+Socio-economic ,growth,no
+Governance ,Legislation,no

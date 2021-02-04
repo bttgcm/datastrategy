@@ -1,15 +1,48 @@
+---
+bibliography: [initiation.bib]
+---
+
 # Project initiation {#intro}
 
-```{r}
+```{r , fig.align='center', out.width='90%', echo = FALSE }
+knitr::include_graphics("images/initiation.jpg")
+
 ```
 
-[ To do in this section: define a minimum package of resources to get basic data for a given basin]
 
 ## Concepts
 
-Add text about site choice, capacity and resource assessment.
+The project initiation phase should gather from enough information to define the project and the essential characteristics of the study site. In particular, information should be gathered about:
 
-After sel-assessment, one of the following scenario should be identified as the most suitable to describe the project:
+### Site choice and basic characterization
+
+The boundaries of the study area should be defined. Depending on the study scope and vision different approaches could be used ( hydrological, political, ecological). Some classification frameworks: @Rosgen1994 @UNEP2017]
+
+
+### Project resources 
+
+Several assessment tool exist [link].\
+In relation to data gathering four dimensions are proposed as a starting point: budget, capacity, level of engagement with the community and level of data uncertainty.
+
+**Budget**. Understanding available budget for the task (and its allocation across different expenditure types) is an essential information in planning an appropriate strategy. 
+
+**Capacity** could be assessed with a particular focus on methods that could be used for data acquisition. This could include field sampling techniques, laboratory analysis, skills in geospatial and remote sensing disciplines, hydrological modelling, statistical and numerical methods.
+
+
+### Stakeholder engagement
+
+**Community engagement**. An important factor that is gaining recognition is the involvement of communities in environmental monitoring. This approach is able to produce, even with limitations, not only robust data but also increase awareness and improve people behaviours toward the environment.
+
+### External data requirements
+
+When gathering data to be reported to an already established framework/legislation, minimum data requirements may exist (number of data points, level of uncertainty).
+
+
+
+### Initial condition scenarios
+
+
+To simplify all the possible combination amongst the aforementioned factors and reach some level of generalization in the following step, three scenarios are proposed. Their aim is to describe some common situations 
 
 **Scenario 01: low resources** – In this alternative, low financial resources are assumed. Methods are chosen based on cost. A medium to high level of capacity is assumed.
 
@@ -17,41 +50,55 @@ After sel-assessment, one of the following scenario should be identified as the 
 
 **Scenario 03: Participation of local communities** Simpler methods involving citizen science and monitoring are used. More frequent, cheaper, less accurate monitoring and sampling are preferred.
 
+```{r , fig.align='center', out.width='80%', echo = FALSE }
+knitr::include_graphics("images/scenarios.jpg")
+
+```
+
 
 ## Tools
 
 
-**River basin information**\
-
-- [Hydrosheds](https://hydrosheds.org)
+### **Checklist** 
 
 
-**Capacity assessment**\
-
-- [A Brief Review of 20 Tools to
-Assess Capacity](https://www.humanitarianlibrary.org/sites/default/files/2014/02/capacity_development_group_undp_2005_brief_review_20_tools_to_assess.pdf)
-
-- [Integrated Water Resources Management, as measured by SDG indicator 6.5.1](http://iwrmdataportal.unepdhi.org)
+Below a checklist of essential information is shown.
 
 
-**Assessing availabe resources**\
+```{r , tidy=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+library(kableExtra)
+data <- read.csv("./data/initiation_checklist.csv")
+knitr::kable(
+  head(data,26), 
+  caption = 'Checklist for initiation phase ',
+  booktabs = TRUE) %>% 
+  kable_styling(font_size = 12, position="left")%>%
+  scroll_box( height = "250px")
 
-- Research on data costing could provide a tool to assess available budget
-
-
-## An example
-The study was conducted on the Akaki River basin (Awash Wenz 2 in Hydrosheds REF). The catchment is located in central Ethiopia along the western mar- gin of the Main Ethiopian Rift and geographically located between 8°46´–9°14´N and 38°34´–39°04´E, covering an area of about 1500 km2. 
-
-It experiences a temperate Afro-Alpine climate with daily average temperatures from 9.9 to 24.6 °C and annual mean rainfall is 1254 mm, as measured at Addis Ababa Observatory .Three main seasons can be observed: the major rainy one, locally known as Kiremt from June to September, contributing about 70% of the total annual rainfall. A minor rainy season, locally known as Belg, from mid-February to mid-April. The remaining five months are dry season (Ethiopian Public health Institute, 2017).
-
-To make the case study more manageable, only one Water Security dimension will be considered: water quality.
-
-```{r, message= FALSE, echo = FALSE, warning = FALSE, out.width = "100%"}
-library(leaflet)
-
-m <- leaflet() %>%
-  addTiles() %>%addProviderTiles("Stamen.Terrain")%>%
-  setView(lng = 38.7, lat = 9, zoom = 12)# Add default OpenStreetMap map tiles
-m
 
 ```
+
+
+### Resources:
+
+An initial set of tools is shown below.  New can be added at [this link](https://docs.google.com/spreadsheets/d/1xHPUe72Uhjl5YdRUlw34hEvQ-Wdnxu6dpPtXX85ZuNk/edit?usp=sharing)
+
+```{r , tidy=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+library(kableExtra)
+data <- read.csv("./data/tools.csv")
+sta <- subset(data, Chapter==" 1 Project initiation")
+knitr::kable(
+  head(data[, 1:3],26), 
+  caption = 'Checklist for initiation phase ',
+  booktabs = TRUE) %>% 
+  kable_styling(font_size = 12, position="left")%>%
+  scroll_box( height = "250px")
+
+
+```
+
+## An example
+
+**To do:** Add report basedon hypothetical project on Akaki river basin.

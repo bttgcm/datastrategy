@@ -1,10 +1,24 @@
+---
+bibliography: [ws_boundaries.bib]
+---
+
 # WS boundaries {#boundaries}
+
+```{r , fig.align='center', out.width='90%', echo = FALSE }
+knitr::include_graphics("images/ws_boundaries.jpg")
+
+```
 
 ## Concepts
 
-Add link to other document/page explaining WS.
+### Water Security
 
-To assess  WS it is necessary to define its boundaries across four categories: dimensions, sub-dimension, indicator and parameters. The diagram below shows what would be included in the forementioned categories to assess water quality dimension. Three sub-dimension are commonly used (treated wastewater, groundwater quality, surface water quality). Each subdimension is connected to an indicator that require specific parameters to be quantified. 
+At a theoretical level, different definitions for Water Security (WS) exists and generally revolve around four main themes: water availability, human vulnerability to hazard, human needs and sustainability [@Cook2012]. One of the most used definition defines WS as: "the reliable availability of an acceptable quantity and quality of water for health, livelihoods and production, coupled with an acceptable level of water-related risks" [@Grey2007]. No globally accepted dentition exist due to the complexity of WS and to the diversity of contexts that can be found around the globe.
+
+At an operational level, several tools exist to assess WS and water vulnerability [@Plummer2012]. Ws is usually divided into dimensions and sub-dimension (water resources, economics, institutions, social, physical environment) with associated indicators.Tools have been created for specific aspects of WS such as scarcity [@Brown2011], for  freshwater [@Norman2013], for specific geographical context such as small islands [@Holding2016Risk], for different geographical scales. 
+
+In the diagram below we can observe that WS is divided into ten dimension (water quality, climate...). In the case of water quality, three sub-dimension exists: wastewater, groundwater (GW) and surface water quality. In this case each sub-dimension is assessed using one parameter (% of treated discharges, GW quality and surface water quality). in the last column parameters that could be used for each indicator are shown.
+
 
 ```{r Water Security, echo=FALSE, message=FALSE, warning=FALSE,out.width='80%',}
 
@@ -19,15 +33,36 @@ p
 
 ```
 
-Different WS indexes were considered. The most common dimensions / indicators / parameters were chosen to form the assessment grid. See below for a practical example on Akaki river.
 
-```{r , fig.cap = "_ To select a set of WS dimension, indicators, parameters (Y), their presence is assessed in existing indexes (X1,X2,..) and ranked based on frequency._ ", fig.align='center', out.width='40%', echo = FALSE }
-knitr::include_graphics("images/indicator_method.jpg")
+### A place-based WS definition
+
+Since no universal definition and assessment tool exist, there is a need to approach WS from a place-based (and time-based) perspective. The proposed process suggests to start looking at existing tools and understanding what dimension, subdimension and indicators could be used. The choice of parameters is left for a later stage of the process.
+
+The following table shows the dimension and indicators used across some WS indexes [ @Vorosmarty2010b; @Gain2016a; @Lautze2014; @Mason2012; @ADB2013; @Gassert2014Aqueduct] and SDGs 6 and 11. 
+
+
+
+```{r , tidy=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+library(kableExtra)
+WS <- read.csv("./data/WS_dimension_format.csv")
+knitr::kable(
+  head(WS,70), 
+  caption = 'List of dimensions and indicators used in different assessment tools with frequency of usage.',
+  booktabs = TRUE) %>% 
+  scroll_box(width = "100%", height = "300px")%>%
+  kable_styling(font_size = 10) 
+
 
 ```
 
 
+At the end of this step, a suitable set of dimension, sub-dimension (with associated thresholds for Water Security) should be identified. 
 
+```{r , fig.align='center', out.width='90%', echo = FALSE }
+knitr::include_graphics("images/WS_dimension.jpg")
+
+```
 
 ## Tools
 
@@ -38,8 +73,24 @@ knitr::include_graphics("images/indicator_method.jpg")
 
 ### Identifying sub-dimension for Water Quality {#subdimension}
 
-Water quality was taken as an example on how to determine indicators for a given dimension. Five different indexes were compared (ADB, 2013; Babel and Shinde, 2013; Carden and Armitage, 2013; Hofste et al., 2019; Mason and Calow, 2012; UN-EP-DHI and UNEP, 2016) within the water quality dimension (Table 2). The comparison showed that the selected indicators indicators converge to three distinct areas: assessment of river water quality (WQ01), groundwater quality (WQ02) and amount of treated discharge to the environment (WQ03). At a more detailed level, the indexes often use different parameters or methods. 
+Water quality was taken as an example on how to determine indicators for a given dimension. Five different indexes were compared (ADB, 2013; Babel and Shinde, 2013; Carden and Armitage, 2013; Hofste et al., 2019; Mason and Calow, 2012; UN-EP-DHI and UNEP, 2016) within the water quality dimension (Table 2). The comparison showed that the selected indicators indicators converge to three distinct areas: assessment of river water quality (WQ01), groundwater quality (WQ02) and amount of treated discharge to the environment (WQ03). At a more detailed level, the indexes often use different parameters or methods. Three sub-dimension were identified with associated indicators:\
 
+**Dimension**: Water Quality
+
+**Sub-dimensions:**
+
+- surface water quality (WQ01) assessed using a suite of parameters that needs to be determined based on the project. 
+- groundwater quality (WQ02) assessed using a suite of parameters to be determined based on the project.
+
+- Discharges to the environment assessed as the fraction of untreated wastewater (WQ03).
+
+**Threholds for Water Security**:
+
+WQ01 - surface water: to be determined using an existing River Water Quality Index
+
+WQ02 - Groundwater quality: to be determined using an existing Groundwater Quality Index
+
+WQ03 - 100% of wastewater is treated before being discharged. As a second step, national regulation on discharges should be met for >80% of cases.As a third step, 100% of wastewater are treated and complly with national regulation on discharges.
 
 
 ```{r , tidy=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
@@ -47,7 +98,7 @@ library(magrittr)
 library(kableExtra)
 data <- read.csv("./data/WQ_indicators.csv")
 knitr::kable(
-  head(data,12), 
+  head(data[,2:4],12), 
   caption = 'comparison of indicators used in different WS indexes to assess water quality. ',
   booktabs = TRUE) %>% 
   kable_styling(font_size = 8)
@@ -56,4 +107,4 @@ knitr::kable(
 ```
 
 
-Three sub-dimension were identified: river water health (WQ01), groundwater quality (WQ02), treated wastewater (WQ03).For each identified subdimension, a similar approach as previously adopted was carried to identify which parameters are more suitable to be used.
+

@@ -1,22 +1,30 @@
-# Rationale
+# Rationale {-}
 
 
-## A pathway for data gathering
-To add: text on existing assessment methods, gaps (linking the steps)
-
-
-
-WS has emerged as a predominant framework in the assessment and understanding of the relationship between the environment and society. Past research has produced a variety of definitions, indexes,
-Data and information are the foundations of any assessment of WS. 
-
-**Place-based application** – Once operationalized, WS definitions and framing adapt to specific contexts [@Gerlak2018]. It is therefore essential to incorporate community context. Therefore, rather than a rigid set of standards and rules a method to build a data gathering strategy is suggested. The user will need to understand what boundaries, threshold, methods, risks are more relevant to the study site.
-
+WS has emerged as a predominant framework in the assessment and understanding of the relationship between the environment and society. Past research has produced a variety of framing, definitions, assessment tools and indices. Despite the diversity, all proposed tools and concepts require information (obtained via data) to be used. The following needs were therefore identified:
 
 **The need for data** - Deputy Secretary-General Eliasson referred to data as the “lifeblood of decision-making and the raw material for accountability” [@UNWater2016]. Several barriers exist before reaching well-integrated, accessible and global data. Collecting data requires resources year [@Espey2015]. Data ownership, management and access add additional layer of complexity to the issue [@Hering2017]. As a consequence, data gaps still exist [@Schmidt-Traub2017b; @UNwater2019] and will affect decision-making [@York2020Measuring]. 
-
+Data and information are the foundations of any assessment of WS. 
 
 **The need for data gathering strategies** - When data exist, it may not necessarily translate into information. In several cases “data seems to be collected without a clear statement to be evaluated” [@Rose1992]. To reduce this possibility, it is essential to elaborate an efficient and robust data gathering strategy through careful experimental design. This aspect is not always given the right amount of attention and sampling errors “are  believed to dominate the errors of analytical measurement during the entire environmental data acquisition process” [@Zhang2012] and will produce different results [@Abbatangelo2019; @Wang2015a]. 
 
-For these reasons, a data gathering strategy (DGS) becomes an essential activity to optimize resources, address leverage points, transform research into impact and reduce uncertainties. This document tries to support this importa phase of a project.
+**The need for place-based application** – Once operationalized, WS definitions and framing adapt to specific contexts [@Gerlak2018]. It is therefore essential to incorporate community context. Therefore, rather than a rigid set of standards and rules a method to build a data gathering strategy is suggested. The user will need to understand what boundaries, threshold, methods, risks are more relevant to the study site.
+
+**The need for improve the linkage between data - information - stakeholder - change** - Text to be added.
+
+**The need to optimize new data acquisition to available resources** - add text
+
+For these reasons, a data gathering strategy (DGS) becomes an essential activity to optimize resources, address leverage points, transform research into impact and reduce uncertainties. This document tries to support this important phase of a project.
+
+
+
+
+
+
+**Feedback links:**
+
+[Feedback on this page](https://drive.google.com/file/d/1q7l7_q7VvtMqR1zzLQzlgaIV6LT1PsQO/view?usp=sharing)
+
+[For general comments you may use  ](https://forms.gle/pKUkQ4EF2kdGTpE98) \
 
 

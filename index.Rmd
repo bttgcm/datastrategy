@@ -1,13 +1,14 @@
 --- 
-title: "Data gathering for Water Security: a contextualised approach"
-author: "Giacomo Butte"
-date: "`r Sys.Date()`"
+title: "Data gathering for Water Security: a suggested process"
+#author: "WP 3.1 data team"
+#date: "`r Sys.Date()`"
+cover-image: cover.jpg
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 highlight: monochrome
 theme: united
 documentclass: book
-bibliography: [datagathering.bib, packages.bib, introduction.bib]
+bibliography: [datagathering.bib, packages.bib, introduction.bib,initiation.bib]
 biblio-style: apalike
 biblatexoptions: [refsegment=chapter]
 link-citations: yes
@@ -35,20 +36,35 @@ knitr::write_bib(c(
 ), 'packages.bib')
 ```
 
+Updates 
+here
 
+
+# About {-}
+
+This is a guidance document for the Water Security Contextualized Assessment Tool developed within the [Water Security Hub](https://www.watersecurityhub.org) at Newcastle University. [Separate documents](https://drive.google.com/drive/folders/1NTrfXlcbLm1Vl83p9Je2v3TI5qGHl-Qd?usp=sharing) illustrates methods and additional literature reviewed in this project . 
+
+**Feedback**
+The document is open to feedback and suggestions.\
+For general comments you may use [<mark> this form</mark> ](https://forms.gle/pKUkQ4EF2kdGTpE98) \
+For specific comments you may edit the text files that contain the guidance and the [<mark> additional documentation here</mark>](https://drive.google.com/drive/folders/1NTrfXlcbLm1Vl83p9Je2v3TI5qGHl-Qd?usp=sharing)
+
+
+**Updates**
+
+22-31.01.2021 - Draft improved in order to be presented to Hub members for feedback
+
+22.1.2021 - Initial draft uploaded on Github and online.
 
 # Introduction
 
-
-This is a guidance document for the Water Security Contextualized Assessment Tool developed within the [Water Security Hub](https://www.watersecurityhub.org) at Newcastle University. The project aim is to support decision making on data gathering by addressing the (apparently simple) question: **"What data do we need to assess Water Security?"**
+The project aim is to support decision making on data gathering by addressing the (apparently simple) question: **"What data do we need to assess Water Security?"**
 
 The proposed process should be understood as a suggested pathway, consisting of several steps. Each step dedicated chapter.The first section of each chapter (_Concepts_) gives the a brief theoretical background and provides reference to key ideas. The second one (_Tools_) recommends some existing tools, methods and suggest possible future research  that could support the task described in the chapter.The third section (_An example_) shows an application of the method. 
 
 In the case study, for simplification, a single dimension of Water Security (WS) was taken into analysis: water quality. The study site is the Akaki river basin located in Ethiopia.
 
-**Feedback**
-<mark> The document is open to feedback and suggestions. </mark> 
-If you have any please use [this form](https://forms.gle/pKUkQ4EF2kdGTpE98) 
+
 
 
 ## Process steps

@@ -1,13 +1,13 @@
-Dimension,Sub-dimension,Indicator,B2013,M2012,A3,TWAP,C2013
-Water Quality,Discharges,Treated wastewater,,1,1,1,
-Water Quality,Discharges,Wastewater management (RPMS – KPI 6 / Green Drop),,,,,1
-Water Quality,Groundwater,Concentration of site-specific pollutants /Permissible limits of these pollutants,1,,,,
-Water Quality,Groundwater,Groundwater quality (State report),,,,,1
-Water Quality,Surface water,Dissolved oxygen concentration/Permissible limit concentration,1,,,,
-Water Quality,Surface water,"Country-specific conditions (ADB, 2013)",1,,,,
-Water Quality,Surface water,"BOD 5-day values of river water samples. (Mehr, 2011)",1,,,,
-Water Quality,Surface water,Change in percentage freshwater of samples meeting quality standards (from GEMS),,1,,,
-Water Quality,Surface water,Change in chlorophyll/ turbidity/ suspended solids; from MODIS satellite UN-Water EG-IMD (2009),,1,,,
-Water Quality,Surface water,Coastal eutrophication potential (CEP) s based on Billen and Garnier’s (2007),,,1,,
-Water Quality,Surface water,"Dissolved inorganic nitrogen (DIN) (sub-indicator 4a) b) , Dissolved inorganic phosphorous (DIP) (sub-indicator 4b)",,,,1,
-Water Quality,Surface water,"Water resource quality (River health, State report)",,,,,1
+Dimension,Sub-dimension,Indicator,Frequency of use,B2013,M2012,A3,TWAP,C2013
+Water Quality,Discharges,Treated wastewater,60%,,1,1,1,
+Water Quality,Discharges,Wastewater management (RPMS – KPI 6 / Green Drop),20%,,,,,1
+Water Quality,Groundwater,Concentration of site-specific pollutants /Permissible limits of these pollutants,20%,1,,,,
+Water Quality,Groundwater,Groundwater quality (State report),20%,,,,,1
+Water Quality,Surface water,Dissolved oxygen concentration/Permissible limit concentration,20%,1,,,,
+Water Quality,Surface water,"Country-specific conditions (ADB, 2013)",20%,1,,,,
+Water Quality,Surface water,"BOD 5-day values of river water samples. (Mehr, 2011)",20%,1,,,,
+Water Quality,Surface water,Change in percentage freshwater of samples meeting quality standards (from GEMS),20%,,1,,,
+Water Quality,Surface water,Change in chlorophyll/ turbidity/ suspended solids; from MODIS satellite UN-Water EG-IMD (2009),20%,,1,,,
+Water Quality,Surface water,Coastal eutrophication potential (CEP) s based on Billen and Garnier’s (2007),20%,,,1,,
+Water Quality,Surface water,"Dissolved inorganic nitrogen (DIN) (sub-indicator 4a) b) , Dissolved inorganic phosphorous (DIP) (sub-indicator 4b)",20%,,,,1,
+Water Quality,Surface water,"Water resource quality (River health, State report)",20%,,,,,1

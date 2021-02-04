@@ -1,0 +1,87 @@
+Dimension,Indicator,Frequency
+Climate,Rainfall variability: Coefficient of variability for CMI (StdDev(CMI)/Mean(CMI); unitless,0.125
+Climate,"Climate variability:Risk index based on topographical variability, water resources, water access, water utilisation, human and institutional capacity",0.125
+Climate,"Interannual, or between year, variability is defined as the coefficient of variation (CV) of available water for each sub-basin. ",0.125
+Climate,"Seasonal variability measures the average within-year
+variability of available water supply, including both
+renewable surface and groundwater supplies. ",0.125
+Climate,"Drought Index is calculated usingPCR-GLOBWB. The values with
+higher DI lead to decrease water security. (Source: Wada 2012)",0.125
+Damages,"Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters",0.25
+Damages,"Flood mortality risk :Risk calculated as function of hazards (GIS data), vulnerability (statistical analysis of historical events), and modelled population exposure;",0.25
+Damages,"Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",0.125
+Damages,"Riverine flood risk measures the percentage of population expected to be affected by riverine flooding in an average year, accounting for existing flood-protection standards (frequencies above 10% are considered)",0.125
+Damages,"Coastal flood risk measures the percentage of the population expected to be affected by coastal flooding in an average year, accounting for existing flood protection standards.",0.125
+Damages,Flood frequencyindex Source:Center forHetal 2005,0.125
+Demand,total withdrawals /TARWR,0.625
+Demand,TARWR/population (FAO AQUASTAT),0.375
+Demand,"Dam storage capacity / population*100,000",0.25
+Demand,TARWR/HDI (FAO AQUASTAT),0.25
+Demand,Groundwater table decline measures the average decline of the groundwater table as the average change for the period of study (1990–2014),0.25
+Demand, Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,0.25
+Demand,"River water health index, water resource development: relative water consumption compared to supply",0.25
+Demand,"River water health index, water resource development: agriculture sector water stress",0.25
+Demand,dynamic TARWR/population,0.125
+Demand,Aggregate upstream water demand/total water supply,0.125
+Demand,"Water withdrawals/ available water, adjusted for estimated Environmental Water Requirement; GWSP",0.125
+Demand,Consumption rate (net virtual water consumed relative to water with- drawn for industry),0.125
+Demand,"Percentage of Renewable Water Resources (RWR) available in excess of environmental water
+requirement (EWR). That is, [RWR - (environmental water requirement + withdrawn water)]/RWR",0.125
+Demand,Water supply (%),0.125
+Demand,Geospatially derived water withdrawals/ dynamic TARWR; unitless,0.125
+Demand,"Various e.g. dependence on virtual water imports; national blue, green and grey water footprints of consumption AND/ OR consumption;",0.125
+Drinking water,Proportion of population using safely managed drinking water services,0.875
+Ecosystems,"River water health index, water resource development: dam density",0.25
+Ecosystems,"River water health index, water resource development: river fragmentation",0.25
+Ecosystems,Geospatial estimate on river fragmentation,0.25
+Ecosystems,Change in the extent of water-related ecosystems over time,0.25
+Ecosystems,"River water health index, watershed disturbace: cropland",0.25
+Ecosystems,"River water health index, watershed disturbace: imperviousness",0.25
+Ecosystems,"River water health index, watershed disturbace: livestock density",0.25
+Ecosystems,"River water health index, watershed disturbace: wetland disconnection",0.25
+Ecosystems,"River water health index, biotic factor: nonnative species",0.25
+Ecosystems,"River water health index, biotic factor: nonnative species richness",0.25
+Ecosystems,"River water health index, biotic factor: catch pressure",0.25
+Ecosystems,"River water health index, water resource development: residency time change downstream from dams",0.125
+Ecosystems,Annual change in freshwater species;,0.125
+Ecosystems,Water Resource development : flow disruption,0
+Efficiency / Value,"River water health index, biotic factor: aquaculture",0.25
+Efficiency / Value,Value added (value of output less value of immediate consumption) by agriculture/ agricultural water withdrawals; AQUASTAT,0.25
+Efficiency / Value,Value added by industry/ industrial water withdrawals ,0.25
+Efficiency / Value,Aquaculture production/ population; tonnes per capita,0.25
+Efficiency / Value, Change in water-use efficiency over time,0.125
+Efficiency / Value,"The Peak RepRisk country ESG risk index quantifies
+business conduct risk exposure related to environmental,
+social, and governance (ESG) issues in the corresponding
+country. ",0.125
+Efficiency / Value,Productivity of irrigated agriculture,0.125
+Efficiency / Value,Productivity (financial value of industrial goods relative to industrial water withdrawal),0.125
+Efficiency / Value,Utilization of total hydropower capacity,0.125
+Efficiency / Value,ratio of hydropower to total energy supply,0.125
+Finance,Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan,0.125
+Management,Proportion of transboundary basin area with an operational arrangement for water cooperation,0.375
+Management,Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management,0.375
+Management,World Governance Index (Kaufmann etal 2010),0.125
+Management,Transboundary legal framework (Source: http://twap-rivers.org/indicators/),0.125
+Management,Percentage of key water indicators reliably tracked by national government; percentage,0.125
+Management,Degree of integrated water resources management,0.125
+Management,Transboundary political tensions : http://twap-rivers.org/ indicators/),0.125
+Quality,Proportion of domestic and industrial wastewater flows safely treated,0.5
+Quality,Proportion of bodies of water with good ambient water quality,0.25
+Quality,"River water health index, pollution (different parameters)",0.25
+Quality,Change in chlorophyll/ turbidity/ suspended solids (MODIS),0.125
+Quality,"Coastal eutrophication potential (CEP) measures the
+potential for riverine loadings of nitrogen (N), phosphorus (P), and silica (Si) to stimulate harmful algal blooms
+in coastal waters.",0.125
+Quality,Water quality index Srebotnjak etal 2012),0.125
+Resilience,resilience (percentage of renewable water resources stored in large dams),0.125
+Resilience,"Risk Management measures the extent
+to which countries are buffered from the effects of rainfall variability through large dam storage",0.125
+Resilience,Independence measures the extent to which countries water and food supplies are safe and secure from external changes or shocks,0.125
+Resilience,Independence from imported water and goods,0.125
+Sanitation,Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water,0.75
+Sanitation,"hygiene (age-standardized disability-adjusted life years per 100,000 people for the incidence of diarrhea)",0.125
+Socio-economic,"exposure (e.g., population density, growth rate)",0.125
+Socio-economic,"basic population vulnerability (e.g., poverty rate, land use);",0.125
+Socio-economic,"soft coping capacities (e.g., literacy rate).",0.125
+Socio-economic,"hard coping capacities (e.g., telecommunications development); and",0.125
