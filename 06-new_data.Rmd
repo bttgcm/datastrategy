@@ -21,7 +21,7 @@ Previous steps should provide with an understanding of:\
 
 - An understanding of the WS system (or sub-system) considered\
 
-- Leverage points to aim at in ordert to produce positive change\
+- Leverage points to aim at in order to produce positive change\
 
 With this information in mind an initial plan for data gathering could be drafted. For specific decision on the data gathering (parameters, location, frequency) a set of different strategies based on available resources and capacity is proposed for different WS dimensions (needs to be developed). 
 
